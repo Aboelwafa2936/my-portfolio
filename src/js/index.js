@@ -1,8 +1,9 @@
 $(window).on('DOMContentLoaded', ()=>{
     
     // dark mode function
-    $(".toggleMode .fa-sun").on('click', ()=>{
-        $(".toggleMode .fa-sun").toggleClass('fa-moon');
+    $(".toggleMode .fa-moon").on('click', ()=>{
+        $(".toggleMode .fa-solid").toggleClass('fa-moon');
+        $(".toggleMode .fa-solid").toggleClass('fa-sun')
         $("body").toggleClass('dark-mode');
     })
 
@@ -100,13 +101,14 @@ $(window).on('DOMContentLoaded', ()=>{
         $('.content').removeClass('d-none');
     }, 2000)
 
-    // fake mouse
-    $(document).on('mousemove', function(e){
-        const clientX = e.clientX;
-        const clientY = e.clientY;
-        console.log(clientX);
-        console.log(clientY);
-        $(".outer-shape").css('top', `${clientY}px`)
-        $(".outer-shape").css('left', `${clientX}px`)
-    })
+    // changing header background color on scroll
+    $(window).on('scroll', function() {
+        console.log('Scroll event triggered');
+        if ($(window).scrollTop() > 50) {
+            console.log('Adding scrolled class');
+            $('header').addClass('scrolled');
+        }else{
+            $('header').removeClass('scrolled');
+        }
+    });
 })
