@@ -59,7 +59,7 @@ a{
     position: absolute;
     width: 50%;
     height: 100vh;
-    background-color: #fff;
+    background-color: #000;
     transition: width 1s ease;
 }
 .left-half{
@@ -143,5 +143,10 @@ a{
 }
 .btn{
     color: var(--text-color);
+    background-color: var(--main-color);
+}
+
+/* scrolled header */
+.scrolled{
     background-color: var(--main-color);
 }
