@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    
+    <title>Aboelwafa</title>
+    <!-- link for font awsome library -->
+    <link rel="stylesheet" href="src/css/all.min.css">
+    <!-- link for bootstrap css file -->
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <!-- link for main css file -->
+    <link rel="stylesheet" href="src/css/main.css" media="print" onload="this.media='all'">
+</head>
+<body class="dark-mode">
+    <!-- *************** loader ***************** -->
+    <div class="loader">
+        <div class="left-half"></div>
+        <div class="right-half"></div>
+    </div>
+    <section class="content d-none">
+        <!-- *************** header ***************** -->
+        <header class="d-flex justify-content-between align-items-center p-3 fixed-top">
+            <a class="navbar-brand" href="#">Aboelwafa</a>
+            <div class="toggleMode">
+                <i class="fa-solid fa-sun"></i>
+            </div>
+        </header>
+        <!-- *************** main content ***************** -->
+        <div class="container">
+            <main class="py-5">
+                <!-- *************** personal information ***************** -->
+                <div class="py-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <figure>
+                                <img class="img-fluid  mx-auto" src="./images/WIN_20240708_06_01_44_Pro.jpg"
+                                    alt="personal photo">
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <span>Software Engineer</span>
+                            <h1>Ahmed Aboelwafa</h1>
+                            <p id="typeWriter"></p>
+                            <div
+                                class="d-flex flex-md-row flex-column align-items-md-center justify-content-center justify-content-md-start gx-3">
+                                <div class="email me-3 border p-2 mb-3 mb-md-0" data-dark data-shadow><i
+                                        class="fa-solid fa-envelope me-2"></i>aboelwafaa213@gmail.com</div>
+                                <div class="phone p-2 border" data-dark data-shadow><i
+                                        class="fa-solid fa-phone me-2"></i>01140031203</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3">
+                    <div class="row">
+                        <div class="col-md-4 p-2 align-self-start" data-dark data-shadow>
+                            <h6 class="border-bottom p-2">About</h6>
+                            <p class="border-bottom p-2">A passionate frontend developer poised to harness skills in user
+                                interface design</p>
+                            <p class="p-1"><i class="fa-solid fa-location me-3"></i>Cairo, Egypt</p>
+                            <p class="p-1"><i class="fa-brands fa-github me-3"></i><a href="https://github.com/Aboelwafa2936" target="_blank">Github</a></p>
+                            <p class="p-1"><i class="fa-brands fa-linkedin-in me-3"></i><a href="https://www.linkedin.com/in/ahmed-abo-el-wafa-121b49255" target="_blank">Linked-in</a></p>
+                        </div>
+                        <div class="col-md-8 gy-3 gy-md-0">
+                            <ul class="tabs list-unstyled d-flex justify-content-evenly border-bottom">
+                                <li class="py-2 px-lg-5 mb-2 tab-link active" data-target="projects">Projects</li>
+                                <li class="py-2 px-lg-5 mb-2 tab-link" data-target="skills">Skills</li>
+                                <li class="py-2 px-lg-5 mb-2 tab-link" data-target="contact">Contact</li>
+                            </ul>
+                            <!-- projects -->
+                            <div id="projects" class="tab-pane">
+                                <div class="row">
+                                    <!-- cyborg project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="cyborg" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-cyborg
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank"
+                                                        href="https://aboelwafa2936.github.io/final-project/index.html"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/cyborg.png" alt="cyborg">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>Cyborg</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mealfiy project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="mealfiy" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-mealfiy
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/mealfiy/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/mealfiy.png" alt="mealfiy">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>Mealfiy</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- fokir project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="fokir" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-fokir
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/fokir/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/fokir.png" alt="fokir">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Landing page</span>
+                                                    <p>Fokir</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- devefilo project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="devefilo" class="card position-relative" data-move data-shadow>
+                                                <div id="visitProject" data-devefilo
+                                                    class="position-absolute top-0 roun flex-column end-0 start-0 bottom-0 d-flex justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/DevFolio/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/Devefilo.png" alt="Devefilo">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Landing page</span>
+                                                    <p>Devefilo</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- denils project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="denils" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-denils
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/DANIELS/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/denils.png" alt="denils">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Landing page</span>
+                                                    <p>Denils</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- conan project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="conan" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-conan
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank"
+                                                        href="https://aboelwafa2936.github.io/Detective-conan/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/detective conan.png"
+                                                        alt="detective conan">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Landing page</span>
+                                                    <p>Detictive Conan</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- bookmark project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="bookmark" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-bookmark
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/Bookmarker-/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/bookmark.png" alt="bookmark">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>Bookmark</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- login project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="log" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-log
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/log-in/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/login.png" alt="login">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>Log-in</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- weather project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="weather" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-weather
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/weather-app/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/weatherApp.png"
+                                                        alt="weatherApp">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>SkyView Weather</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- games project -->
+                                    <div class="col-md-6">
+                                        <div class="m-2">
+                                            <div id="games" class="card" data-move data-shadow>
+                                                <div id="visitProject" data-games
+                                                    class="position-absolute top-0 rounded end-0 start-0 bottom-0 d-flex flex-column justify-content-center align-items-center">
+                                                    <a target="_blank" href="https://aboelwafa2936.github.io/games-app/"><i
+                                                            class="fa-brands fa-github fa-xl"></i></a>
+                                                    <p>peek</p>
+                                                </div>
+                                                <figure>
+                                                    <img class="img-fluid reounded" src="images/gamesApp.png" alt="gamesApp">
+                                                </figure>
+                                                <figcaption class="p-2">
+                                                    <span>Web App</span>
+                                                    <p>Games-hub</p>
+                                                </figcaption>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- skills -->
+                            <div id="skills" class="tab-pane d-none">
+                                <div class="row gy-4">
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/html5.svg" alt="">
+                                            </figure>
+                                            <span>Html</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/css3.svg" alt="">
+                                            </figure>
+                                            <span>Css</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/Bootstrap_(front-end_framework)-Logo.wine.png" data-size
+                                                    alt="">
+                                            </figure>
+                                            <span>Bootstrap</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/javascript.svg" alt="">
+                                            </figure>
+                                            <span>Javascript</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/images-removebg-preview.png" data-size alt="">
+                                            </figure>
+                                            <span>jQuery</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div data-dark data-shadow
+                                            class="p-3 d-md-block d-flex justify-content-between align-items-center">
+                                            <figure>
+                                                <img src="./images/images (1).png" data-size alt="">
+                                            </figure>
+                                            <span>TailwindCss</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="contact" class="tab-pane d-none">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6">
+                                        <div class="p-2">
+                                            <h4 class="mb-4">Contact info</h4>
+                                            <div class="d-flex align-items-center mb-3 py-3">
+                                                <i class="fa-solid fa-envelope me-3"></i>
+                                                <div class="info">
+                                                    <span>Send a mail</span>
+                                                    <a href="mailto: aboelwafaa213@gmail.com"
+                                                        class="d-block">aboelwafaa213@gmail.com</a>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center border-bottom py-3">
+                                                <i class="fa-solid fa-phone me-3"></i>
+                                                <div class="info">
+                                                    <span>Contact me</span>
+                                                    <a href="tel:01140031203" class="d-block">01140031203</a>
+                                                </div>
+                                            </div>
+                                            <div class="social py-3">
+                                                <h4 class="mb-4">Social info</h4>
+                                                <a href="https://github.com/Aboelwafa2936" class="me-3" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                                <a href="https://www.linkedin.com/in/ahmed-abo-el-wafa-121b49255" class="me-3" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                                <a href="https://codepen.io/aboelwafa" class="me-3" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col-md-6">
+                                        <form class="p-3" method="post" data-dark data-shadow>
+                                            <h3 class="mb-3">Let's Work Together.</h3>
+                                            <input type="text" class="form-control mb-3" data-dark data-shadow
+                                                placeholder="Enter your name" required>
+                                            <input type="text" class="form-control mb-3" data-dark data-shadow
+                                                placeholder="Enter your email" required>
+                                            <input type="text" class="form-control mb-3" data-dark data-shadow
+                                                placeholder="Subject" required>
+                                            <textarea name="" id="" class="form-control mb-3" placeholder="Message" data-dark
+                                                data-shadow></textarea>
+                                            <button type="submit" class="btn border" data-shadow>Send a message</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- *************** footer ***************** -->
+        <footer class="w-75 mx-auto border-top text-center p-2">
+            <p>Copyright 2024 , Coded by Ahmed Aboelwafa</p>
+        </footer>
+    </section>
+    <!-- script for jqurey library -->
+    <script src="src/js/jquery-3.7.1.min.js"></script>
+    <!-- script for main js file -->
+    <script src="src/js/index.js"></script>
+</body>
+</html>
